@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razorpay Payment Example</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <h1>Razorpay Payment Integration</h1>
+  <button id="rzp-button">Pay ₹500</button>
+
+  <script>
+    // const RAZORPAY_KEY = 'rzp_live_xfQ1vi23l3sFzy'; // Razorpay Key ID
+    const RAZORPAY_KEY = "rzp_test_7QvpPBtnZZFuWq"; // Razorpay Key ID fake 
+
+    // Function to create an order from the backend and start payment
+    async function createOrderAndPay() {
+      const amount = 50000; // Amount in paise (₹500)
+
+      try {
+        // Request to your backend to create an order
+        const response = await fetch('http://localhost:5000/create-order', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            amount: amount, // Send amount in paise
+          })
+        });
+
+        const data = await response.json();
+
+        // If order is successfully created, open Razorpay payment gateway
+        if (data.orderId) {
+          const options = {
+            key: RAZORPAY_KEY, // Your Razorpay Key ID
+            amount: data.amount, // Amount from the order created
+            currency: 'INR',
+            name: 'Your Company Name',
+            description: 'Test Transaction',
+            order_id: data.orderId, // The order ID from backend
+            handler: function (response) {
+              // Handle successful payment
+              alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+            },
+            prefill: {
+              name: 'John Doe', // Prefilled user name
+              email: 'john.doe@example.com', // Prefilled user email
+              contact: '9876543210' // Prefilled user contact number
+            },
+            theme: {
+              color: '#3399cc'
+            }
+          };
+
+          const rzp = new Razorpay(options);
+          rzp.open();
+        } else {
+          alert('Failed to create order');
+        }
+      } catch (error) {
+        console.error('Error creating order:', error);
+      }
+    }
+
+    document.getElementById('rzp-button').addEventListener('click', createOrderAndPay);
+  </script>
+</body>
+</html>

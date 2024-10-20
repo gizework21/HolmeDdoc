@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "sharp-sans";
+  src: url("./assets/fonts/Sharp Sans.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-bold";
+  src: url("./assets/fonts/SharpSansBold.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-medium";
+  src: url("./assets/fonts/Sharp\ Sans\ Medium.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-light";
+  src: url("./assets/fonts/Sharp\ Sans\ Light.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-italic";
+  src: url("./assets/fonts/Sharp\ Sans\ Italic.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-extrabold";
+  src: url("./assets/fonts/Sharp\ Sans\ Extrabold.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-extrabold-italic";
+  src: url("./assets/fonts/Sharp\ Sans\ ExtraBold\ Italic.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-thin";
+  src: url("./assets/fonts/Sharp\ Sans\ Thin.otf");
+}
+
+@font-face {
+  font-family: "sharp-sans-semibold";
+  src: url("./assets/fonts/Sharp\ Sans\ Semibold.otf");
+}
+
+@font-face {
+  font-family: "basic-sans-regular";
+  src: url("./assets/fonts/BasicSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "basic-sans-new";
+  src: url("./assets/fonts/basicSans-New.ttf");
+}
+
+@font-face{
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins.ttf")
+}
+
+@font-face{
+  font-family: "basic-sans-bold";
+  src: url("./assets/fonts/BasicBold.ttf")
+}
+
+
+@font-face{
+  font-family: "basic-sans-light";
+  src: url("./assets/fonts/basicsanslightsf.ttf")
+}
+
+@font-face{
+  font-family: "henriette";
+  src: url("./assets/fonts/Henriette-Regular.ttf")
+}
+
+.mapboxgl-control-container{
+  visibility: hidden;
+}
+.suggestions-wrapper ul.suggestions{
+  display: flex;
+;
+}
+ul .suggestions{
+  display: flex;
+}
+
+.mapboxgl-ctrl-geocoder--suggestion-title{
+  background-color: red;
+
+}
+
+
+
+@media (min-width: 1024px) {
+  .policy-direction{
+    flex-direction: row !important;
+  }
+}

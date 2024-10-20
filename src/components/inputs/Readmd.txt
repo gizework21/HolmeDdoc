@@ -1,0 +1,37 @@
+you can focus on any element on load by passing focusOnLoad=true and also
+create and pass a ref using   let nodeRef = createRef(null) and pass it like
+<TextInput
+label="First name"
+placeholder="Your first name"
+nodeRef={nodeRef}
+focusOnLoad={true}
+fullWidth ={true}
+handleChange={handleChange}
+errorMessage="Password must contain Alphanumeric chars"
+/>
+
+fullWidth will take entire space available
+** the component has m-1 set by default
+
+errorMessage="Password must contain Alphanumeric chars"
+will show error
+
+      <TextInput
+        label="First name"
+        placeholder="Your first name"
+        nodeRef={nodeRef}
+        focusOnLoad={true}
+        handleChange={handleChange}
+        errorMessage="Password must contain Alphanumeric chars"
+      />
+       <PasswordInput
+        label="First name"
+        placeholder="Your first name"
+        nodeRef={nodeRef}
+        fullWidth={true}
+        errorMessage="Password must contain Alphanumeric chars"
+      />
+
+
+
+   

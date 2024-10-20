@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="95" viewBox="0 0 95 95">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2876" data-name="Rectangle 2876" width="95" height="95" transform="translate(709 3939)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1846" data-name="Group 1846" transform="translate(-709 -3939)">
+    <g id="Process_Search_icon_" data-name="Process(Search icon)" clip-path="url(#clip-path)">
+      <g id="Group_758" data-name="Group 758" transform="translate(-15 -114.694)">
+        <g id="Layer_2" data-name="Layer 2" transform="translate(726 4056.368)">
+          <path id="search" d="M92.505,85.328,75.322,68.2a40.027,40.027,0,0,0,8.541-24.764A40.431,40.431,0,1,0,43.431,83.863,40.027,40.027,0,0,0,68.2,75.322L85.328,92.505a5.075,5.075,0,1,0,7.177-7.177Zm-79.4-41.9A30.324,30.324,0,1,1,43.431,73.755,30.324,30.324,0,0,1,13.108,43.431Z" transform="translate(-3 -3)"/>
+        </g>
+        <path id="Path_38588" data-name="Path 38588" d="M-17000.256,4941.4s-11.461,14.035-8.889,25.73,9.822,23.391,25.494,26.432,26.432-8.655,26.432-8.655-23.158,5.731-33.916-5.146S-17000.256,4941.4-17000.256,4941.4Z" transform="translate(17745.438 -866.863)" fill="#e2f6f3"/>
+        <path id="Path_38589" data-name="Path 38589" d="M-16987.16,4937.737a28.383,28.383,0,0,1,7.809-.936,15.567,15.567,0,0,1,8.52,3.041" transform="translate(17750.496 -866.475)" fill="none" stroke="#008282" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+    <path id="Line_149" data-name="Line 149" d="M2.5,27h-5V0h5Z" transform="translate(765 3981) rotate(90)" fill="#008282"/>
+  </g>
+</svg>

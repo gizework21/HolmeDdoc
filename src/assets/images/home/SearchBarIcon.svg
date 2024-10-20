@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137" height="137" viewBox="0 0 137 137">
+
+  <g id="Search_bar_icon" data-name="Search bar icon" transform="translate(-1705.5 -865.5)">
+    <g transform="matrix(1, 0, 0, 1, 1705.5, 865.5)" filter="url(#Ellipse_31)">
+      <circle id="Ellipse_31-2" data-name="Ellipse 31" cx="55" cy="55" r="55" transform="translate(12.5 9.5)" fill="#008282"/>
+    </g>
+    <g id="Group_67" data-name="Group 67" transform="translate(1747 905)">
+      <path id="Icon_ionic-ios-search" data-name="Icon ionic-ios-search" d="M54.96,50.662l-14.2-13.968a19.477,19.477,0,0,0,4.454-12.375A20.092,20.092,0,0,0,24.857,4.493,20.1,20.1,0,0,0,4.5,24.331,20.093,20.093,0,0,0,24.857,44.157a20.615,20.615,0,0,0,12.831-4.432L51.8,53.6a2.226,2.226,0,0,0,3.085.078A2.105,2.105,0,0,0,54.96,50.662Zm-30.1-10.768a16.094,16.094,0,0,1-11.3-4.561,15.269,15.269,0,0,1,0-22,16.283,16.283,0,0,1,22.6,0,15.269,15.269,0,0,1,0,22A16.094,16.094,0,0,1,24.857,39.894Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

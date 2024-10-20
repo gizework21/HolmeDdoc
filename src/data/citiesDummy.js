@@ -1,0 +1,22 @@
+export const CITIES_DUMMY = [
+    'San Franisco',
+    'San Jose',
+    'Seattle',
+    'Washington',
+    'San Digeo',
+    'San Franisco',
+    'San Jose',
+    'Seattle',
+    'Washington',
+    'San Digeo',
+    'San Franisco',
+    'San Jose',
+    'Seattle',
+    'Washington',
+    'San Digeo',
+    'San Franisco',
+    'San Jose',
+    'Seattle',
+    'Washington',
+    'San Digeo'
+]
