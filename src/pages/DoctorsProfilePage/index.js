@@ -55,9 +55,7 @@ function DoctorsProfilePageContent() {
     const selectedDateIndex = selectedAppointment.date;
     console.log(selectedDateIndex)
     // const selectedDateInfo = transformedAvailability[selectedDateIndex];
-    // console.log(transformedAvailability)
     const selectedDateInfo = transformedAvailability.find(item => item.date === selectedDateIndex);
-    // console.log(foundObject)
     console.log("Selected Date Info:", selectedDateInfo);
   
     if (!selectedDateInfo) {
