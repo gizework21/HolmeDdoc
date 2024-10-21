@@ -35,10 +35,10 @@ function DoctorsProfilePageContent() {
   const disable = !transformedAvailability?.some(item => item.isAvailable);
 
   useEffect(() => {
-    if (selectedAppointment.date !== null) {
+    if (selectedAppointment.date == null) {
       setAppointmentError(v => ({ ...v, date: false }));
     }
-    if (selectedAppointment.time !== null) {
+    if (selectedAppointment.time == null) {
       setAppointmentError(v => ({ ...v, time: false }));
     }
   }, [selectedAppointment]);
@@ -87,7 +87,7 @@ function DoctorsProfilePageContent() {
     // const selectedTimeSlot = selectedDateInfo.inPersonTimeSlots.find(slot => slot.id === selectedAppointment.time) ||
     //                          selectedDateInfo.virtualTimeSlots.find(slot => slot.id === selectedAppointment.time);
     
-    const selectedTimeSlot = selectedDateInfo?.inPersonTimeSlots[0]?.slots[indexOfSelectedAppointment] ||
+    const selectedTimeSlot = selectedDateInfo?.inPersonTimeSlots[6]?.slots[indexOfSelectedAppointment] ||
                              selectedDateInfo.virtualTimeSlots.find(slot => slot.id === selectedAppointment.time);
   
 
@@ -166,7 +166,6 @@ function DoctorsProfilePageContent() {
                   availability={transformedAvailability}
                   setAvailability={setSelectedAppointment}
                   initialValue={selectedAppointment}
-                  setDoctorTimeSlots={setDoctorTimeSlots}
                   doctorId={doctorInfo.id}
                   dateErrorMessage={appointmentError.date && "Please select date and time"}
                   timeErrorMessage={appointmentError.time && "Please select time"}

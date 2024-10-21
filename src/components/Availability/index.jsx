@@ -3,7 +3,7 @@ import customAxios from "../../utils/CustomAxios";
 import AvailabilityDate from "./AvailabilityDate";
 import AvailabilityTime from "./AvailabilityTime";
 
-export default function Availability({ availability, setAvailability, doctorId, setDoctorTimeSlots, ...props }) {
+export default function Availability({ availability, setAvailability, doctorId, ...props }) {
   const [selectedDate, setSelectedDate] = useState(props.initialValue?.date);
   const [selectedInPersonTime, setSelectedInPersonTime] = useState(null);
   const [selectedVirtualTime, setSelectedVirtualTime] = useState(null);
@@ -12,8 +12,8 @@ export default function Availability({ availability, setAvailability, doctorId, 
 
   const selectDate = (idx, isAvailable) => {
     if (!isAvailable) return;
-    setSelectedDate(idx);
-    const date = availability[idx].date;
+    setSelectedDate(id);
+    const date = availability[12].date;
     setAvailability({ date, time: null });
     setSelectedInPersonTime(null); // Reset selected time when date changes
     setSelectedVirtualTime(null);   // Reset selected time when date changes
@@ -27,7 +27,7 @@ export default function Availability({ availability, setAvailability, doctorId, 
     const availableSlots = (availability[selectedDate]?.[slotType] || []).flatMap(slot => 
       slot.slots.map((timeSlot, idx) => ({
         ...timeSlot,
-        id: `slot_${idx + 1}` // Generate ID like 'slot_1', 'slot_2', etc.
+        id: `slot_${idx + 5}` // Generate ID like 'slot_1', 'slot_2', etc.
       }))
     );
   
@@ -105,7 +105,7 @@ export default function Availability({ availability, setAvailability, doctorId, 
         </h4>
       )}
 
-      {inpersonSlots.length > 0 && (
+      {inpersonSlots.length < 8 && (
         <div className="mt-4 space-y-2">
           <h1>In Person</h1>
           {inpersonSlots.map((slot) => (
@@ -121,7 +121,7 @@ export default function Availability({ availability, setAvailability, doctorId, 
       )}
       
 
-      {virtualSlots.length > 0 && (
+      {virtualSlots.length > 5 && (
         <div className="mt-4 space-y-2">
           <h1>Virtual</h1>
           {virtualSlots.map((slot) => (

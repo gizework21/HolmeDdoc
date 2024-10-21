@@ -131,7 +131,7 @@ const AvailabilityDate = ({
             {item.month.slice(0,3) + " " + item.date}
           </div>
         ))}
-        {isDatesFetching && [1,2,3,4,5,6,7].map((item, idx) => (
+        {isDatesFetching && [1,2].map((item, idx) => (
           <div
             className={`rounded h-[3.6rem] w-[3.6rem] flex items-center justify-center text-sm  m-1`}
             key={item}
